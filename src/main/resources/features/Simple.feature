@@ -1,8 +1,16 @@
-Feature: Simple Test Exmaple
+Feature: Test some wikipedia
+  
+  Demonstrate a simple test case on wikipedia.org
+  
 
-This is a really simple test example
+  Scenario: Test Algorithms search
+    Given I am on the wikipedia home page
+    When I search for "algorithms"
+    Then I should see the title Algorithms and the heading Algorithms
 
-Scenario: Simple Test 1 
-    Given I am on the google home page
-    When I click I am feeling lucky
-    Then I should see doodles
+  Scenario: Test wotif search
+    Given I am on the wikipedia home page
+    When I search for "wotif"
+    Then I should see the title Wotif.com and the heading Wotif.com
+    
+ 
