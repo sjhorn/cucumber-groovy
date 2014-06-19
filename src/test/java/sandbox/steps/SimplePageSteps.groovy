@@ -13,7 +13,7 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver
 WebDriver driver
 
 Before { 
-    driver = new HtmlUnitDriver() //new FirefoxDriver()
+    driver = new FirefoxDriver() //new HtmlUnitDriver() 
 }
 
 After {
